@@ -40,7 +40,7 @@ print(f"Redacted {len(result.spans)} detected PHI spans")
 
 Supported redaction strategies are `mute`, `beep` (a 1 kHz tone), and
 `replace`. For `replace`, pass a callback that accepts the detected `PHISpan`,
-sample rate, and interval length in frames, and returns 16-bit PCM replacement
+interval length in frames, and sample rate, and returns 16-bit PCM replacement
 samples. Replacement samples are truncated or zero-padded to the redacted
 interval. Output is mono WAV audio.
 
